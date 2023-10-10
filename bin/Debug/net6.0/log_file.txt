@@ -1,0 +1,47 @@
+2023-10-10 13:03:59.1338|INFO|Program|Program started
+2023-10-10 13:03:59.1615|INFO|Program|Program ended
+2023-10-10 13:05:18.5612|INFO|Program|Program started
+2023-10-10 13:05:18.5882|INFO|Program|Program ended
+2023-10-10 13:07:15.2651|INFO|Program|Program started
+2023-10-10 13:07:15.2932|INFO|Program|Program ended
+2023-10-10 13:09:38.9867|INFO|Program|Program started
+2023-10-10 13:09:39.0171|INFO|Program|Program ended
+2023-10-10 13:11:40.3826|INFO|Program|Program started
+2023-10-10 13:11:40.4149|INFO|Program|Program ended
+2023-10-10 13:17:02.8722|INFO|Program|Program started
+2023-10-10 13:17:02.9152|INFO|FileScrubber|File scrub started
+2023-10-10 13:17:02.9254|ERROR|FileScrubber|String 'Adventure|Drama|Fantasy|Mystery|Sci-Fi' was not recognized as a valid TimeSpan.
+2023-10-10 13:17:02.9254|INFO|Program|
+2023-10-10 13:17:02.9254|INFO|Program|Program ended
+2023-10-10 13:18:35.5240|INFO|Program|Program started
+2023-10-10 13:18:35.5694|INFO|FileScrubber|File already scrubbed
+2023-10-10 13:18:35.5694|INFO|Program|movies.scrubbed.csv
+2023-10-10 13:18:35.5694|INFO|Program|Program ended
+2023-10-10 13:23:08.4863|INFO|Program|Program started
+2023-10-10 13:23:08.5287|INFO|FileScrubber|File already scrubbed
+2023-10-10 13:23:08.5287|INFO|Program|movies.scrubbed.csv
+2023-10-10 13:23:08.5287|INFO|Program|Program ended
+2023-10-10 13:24:07.9966|INFO|Program|Program started
+2023-10-10 13:24:08.0400|INFO|FileScrubber|File scrub started
+2023-10-10 13:24:08.0400|ERROR|FileScrubber|String 'Adventure|Drama|Fantasy|Mystery|Sci-Fi' was not recognized as a valid TimeSpan.
+2023-10-10 13:24:08.0400|INFO|Program|
+2023-10-10 13:24:08.0400|INFO|Program|Program ended
+2023-10-10 13:26:58.3293|INFO|Program|Program started
+2023-10-10 13:26:58.3737|INFO|FileScrubber|File scrub started
+2023-10-10 13:26:58.3835|ERROR|FileScrubber|String 'Comedy|Drama|Romance' was not recognized as a valid TimeSpan.
+2023-10-10 13:26:58.3835|INFO|Program|
+2023-10-10 13:26:58.3835|INFO|Program|Program ended
+2023-10-10 13:29:37.5360|INFO|Program|Program started
+2023-10-10 13:29:37.5788|INFO|FileScrubber|File scrub started
+2023-10-10 13:29:37.5972|INFO|FileScrubber|File scrub ended
+2023-10-10 13:29:37.5972|INFO|Program|movies.scrubbed.csv
+2023-10-10 13:29:37.5982|INFO|Program|Program ended
+2023-10-10 13:31:15.0961|INFO|Program|Program started
+2023-10-10 13:31:15.1539|INFO|FileScrubber|File already scrubbed
+2023-10-10 13:31:15.1539|INFO|Program|movies.scrubbed.csv
+2023-10-10 13:31:15.1539|INFO|Program|Program ended
+2023-10-10 13:31:53.4533|INFO|Program|Program started
+2023-10-10 13:31:53.4963|INFO|FileScrubber|File already scrubbed
+2023-10-10 13:31:53.4963|INFO|Program|movies.scrubbed.csv
+2023-10-10 13:31:53.5266|INFO|MovieFile|Movies in file 9125
+2023-10-10 13:31:53.5266|INFO|Program|Program ended

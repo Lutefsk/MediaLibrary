@@ -1,0 +1,17 @@
+C:\Users\ckelm1\Desktop\MediaLibrary\obj\Debug\net6.0\MediaLibrary.csproj.AssemblyReference.cache
+C:\Users\ckelm1\Desktop\MediaLibrary\obj\Debug\net6.0\MediaLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ckelm1\Desktop\MediaLibrary\obj\Debug\net6.0\MediaLibrary.AssemblyInfoInputs.cache
+C:\Users\ckelm1\Desktop\MediaLibrary\obj\Debug\net6.0\MediaLibrary.AssemblyInfo.cs
+C:\Users\ckelm1\Desktop\MediaLibrary\obj\Debug\net6.0\MediaLibrary.csproj.CoreCompileInputs.cache
+C:\Users\ckelm1\Desktop\MediaLibrary\bin\Debug\net6.0\MediaLibrary.exe
+C:\Users\ckelm1\Desktop\MediaLibrary\bin\Debug\net6.0\MediaLibrary.deps.json
+C:\Users\ckelm1\Desktop\MediaLibrary\bin\Debug\net6.0\MediaLibrary.runtimeconfig.json
+C:\Users\ckelm1\Desktop\MediaLibrary\bin\Debug\net6.0\MediaLibrary.dll
+C:\Users\ckelm1\Desktop\MediaLibrary\bin\Debug\net6.0\MediaLibrary.pdb
+C:\Users\ckelm1\Desktop\MediaLibrary\bin\Debug\net6.0\NLog.dll
+C:\Users\ckelm1\Desktop\MediaLibrary\obj\Debug\net6.0\MediaLibrary.csproj.CopyComplete
+C:\Users\ckelm1\Desktop\MediaLibrary\obj\Debug\net6.0\MediaLibrary.dll
+C:\Users\ckelm1\Desktop\MediaLibrary\obj\Debug\net6.0\refint\MediaLibrary.dll
+C:\Users\ckelm1\Desktop\MediaLibrary\obj\Debug\net6.0\MediaLibrary.pdb
+C:\Users\ckelm1\Desktop\MediaLibrary\obj\Debug\net6.0\MediaLibrary.genruntimeconfig.cache
+C:\Users\ckelm1\Desktop\MediaLibrary\obj\Debug\net6.0\ref\MediaLibrary.dll

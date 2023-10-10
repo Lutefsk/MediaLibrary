@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "U9vF5LTPR/p/vRQBz9JBoRsymfv2uSi7u/fbuQm4k8TNwxlwy76Y1NFvz8Vn24r5BQVdAAcMclTZ69i2YEqgGQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ckelm1\\Desktop\\MediaLibrary\\MediaLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ckelm1\\.nuget\\packages\\nlog\\5.1.1\\nlog.5.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}
