@@ -7,41 +7,73 @@ string path = Directory.GetCurrentDirectory() + "\\nlog.config";
 var logger = LogManager.LoadConfiguration(path).GetCurrentClassLogger();
 logger.Info("Program started");
 
-// Movie movie = new Movie
-// {
-//     mediaId = 123,
-//     title = "Greatest Movie Ever, The (2023)",
-//     director = "Jeff Grissom",
-//     // timespan (hours, minutes, seconds)
-//     runningTime = new TimeSpan(2, 21, 23),
-
-//     genres = { "Comedy", "Romance" }
-// };
-
-// Console.WriteLine(movie.Display());
-
-// Album album = new Album
-// {
-//     mediaId = 321,
-//     title = "Greatest Album Ever, The (2020)",
-//     artist = "Jeff's Awesome Band",
-//     recordLabel = "Universal Music Group",
-//     genres = { "Rock" }
-// };
-// Console.WriteLine(album.Display());
-
-// Book book = new Book
-// {
-//     mediaId = 111,
-//     title = "Super Cool Book",
-//     author = "Jeff Grissom",
-//     pageCount = 101,
-//     publisher = "",
-//     genres = { "Suspense", "Mystery" }
-// };
-// Console.WriteLine(book.Display());
 string scrubbedFile = FileScrubber.ScrubMovies("movies.csv");
 logger.Info(scrubbedFile);
 MovieFile movieFile = new MovieFile(scrubbedFile);
 
 logger.Info("Program ended");
+bool optionISNOT1or2 = true;
+while (optionISNOT1or2)
+{
+    Console.WriteLine("Enter 1 add a movie to the file");
+    Console.WriteLine("Enter 2 to display all movies");
+    Console.WriteLine("Enter anything else to quit.");
+
+    string resp = Console.ReadLine();
+    int maxid = 0;
+
+    if (resp == "1") //add a new movie
+    {
+        Console.WriteLine("Enter movie title (year):");
+        string newMovieTitle = Console.ReadLine();
+        Console.WriteLine("Enter Enter genre (or done to quit):");
+        string newMovieGenre = Console.ReadLine();
+        Console.WriteLine("Enter additional genre (or done to quit):");
+        string newMovieAddGenre = Console.ReadLine();
+        Console.WriteLine("Enter movie director: ");
+        string newMovieDirector = Console.ReadLine();
+        Console.WriteLine("Enter movie runtime (h:m:s):");
+        string newMovieRuntime = Console.ReadLine();
+
+        //add entry to movies.csv
+        string filePath = Directory.GetCurrentDirectory() + "\\movies.csv";
+        StreamWriter sw = new StreamWriter(filePath, true);
+        {
+            sw.WriteLine(newMovieTitle, newMovieGenre, newMovieAddGenre, newMovieDirector, newMovieRuntime);
+
+        }
+        sw.Close();
+    }
+
+else if (resp == "2")//read the movies.csv file
+{
+    string filePath = Directory.GetCurrentDirectory() + "\\movies.csv";
+    if (File.Exists(filePath))
+{
+    StreamReader sr = new StreamReader(filePath);
+    while (!sr.EndOfStream)
+    {
+        string line = sr.ReadLine();
+        string[] segments = line.Split(',');
+        Console.WriteLine($"{segments[0]}, {segments[1]}, {segments[2]}"); // display each movie attribute on one line
+
+        if (int.TryParse(segments[0], out int id))
+        {
+            maxid = Math.Max(maxid, id);
+        }
+        else
+        {
+            logger.Warn("invalid ID in movies.csv file, file correct id number");
+        }
+    }
+}
+ else
+        {
+            Console.WriteLine("File doesn't exist");
+        }
+    }
+else
+    {
+        optionISNOT1or2 = false;
+    }
+}

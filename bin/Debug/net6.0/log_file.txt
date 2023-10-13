@@ -45,3 +45,13 @@
 2023-10-10 13:31:53.4963|INFO|Program|movies.scrubbed.csv
 2023-10-10 13:31:53.5266|INFO|MovieFile|Movies in file 9125
 2023-10-10 13:31:53.5266|INFO|Program|Program ended
+2023-10-12 22:06:59.1320|INFO|Program|Program started
+2023-10-12 22:06:59.2424|INFO|FileScrubber|File already scrubbed
+2023-10-12 22:06:59.2424|INFO|Program|movies.scrubbed.csv
+2023-10-12 22:06:59.3336|INFO|MovieFile|Movies in file 9125
+2023-10-12 22:06:59.3465|INFO|Program|Program ended
+2023-10-12 22:54:33.9982|INFO|Program|Program started
+2023-10-12 22:54:34.0886|INFO|FileScrubber|File already scrubbed
+2023-10-12 22:54:34.0886|INFO|Program|movies.scrubbed.csv
+2023-10-12 22:54:34.1711|INFO|MovieFile|Movies in file 9125
+2023-10-12 22:54:34.1840|INFO|Program|Program ended
