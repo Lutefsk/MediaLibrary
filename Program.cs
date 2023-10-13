@@ -26,10 +26,15 @@ while (optionISNOT1or2)
     {
         Console.WriteLine("Enter movie title (year):");
         string newMovieTitle = Console.ReadLine();
-        Console.WriteLine("Enter Enter genre (or done to quit):");
-        string newMovieGenre = Console.ReadLine();
-        Console.WriteLine("Enter additional genre (or done to quit):");
-        string newMovieAddGenre = Console.ReadLine();
+        List<string> newMovieGenres = new List<string>();
+        while(true)
+        { 
+            Console.WriteLine("Enter Enter genre (or done to quit):");
+            string MovieGenre = Console.ReadLine();
+            if (MovieGenre == "done")
+                break;
+                newMovieGenres.Add(MovieGenre);
+        }
         Console.WriteLine("Enter movie director: ");
         string newMovieDirector = Console.ReadLine();
         Console.WriteLine("Enter movie runtime (h:m:s):");
@@ -39,7 +44,7 @@ while (optionISNOT1or2)
         string filePath = Directory.GetCurrentDirectory() + "\\movies.csv";
         StreamWriter sw = new StreamWriter(filePath, true);
         {
-            sw.WriteLine(newMovieTitle, newMovieGenre, newMovieAddGenre, newMovieDirector, newMovieRuntime);
+            sw.WriteLine($"{newMovieTitle}, {newMovieGenres}, {newMovieDirector}, {newMovieRuntime}");
 
         }
         sw.Close();
@@ -55,7 +60,7 @@ else if (resp == "2")//read the movies.csv file
     {
         string line = sr.ReadLine();
         string[] segments = line.Split(',');
-        Console.WriteLine($"{segments[0]}, {segments[1]}, {segments[2]}"); // display each movie attribute on one line
+        Console.WriteLine($"{segments[0]}, {segments[1]}, {segments[2]}, {segments[3]}, {segments[4]}"); // display each movie attribute on one line
 
         if (int.TryParse(segments[0], out int id))
         {
