@@ -69,3 +69,9 @@
 2023-10-12 23:20:27.5090|INFO|FileScrubber|File already scrubbed
 2023-10-12 23:20:27.5090|INFO|Program|movies.scrubbed.csv
 2023-10-12 23:20:27.6473|INFO|MovieFile|Movies in file 9125
+2023-10-12 23:20:27.6711|INFO|Program|Program ended
+2023-10-12 23:26:34.0274|INFO|Program|Program started
+2023-10-12 23:26:34.2253|INFO|FileScrubber|File already scrubbed
+2023-10-12 23:26:34.2301|INFO|Program|movies.scrubbed.csv
+2023-10-12 23:26:34.3211|INFO|MovieFile|Movies in file 9125
+2023-10-12 23:26:34.3407|INFO|Program|Program ended
