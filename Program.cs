@@ -19,11 +19,12 @@ Console.WriteLine($"There are {Movies.Count()} movies from 1990");
 Console.ForegroundColor = ConsoleColor.White;
 
 
-bool optionISNOT1or2 = true;
-while (optionISNOT1or2)
+bool optionISNOT1thru3 = true;
+while (optionISNOT1thru3)
 {
     Console.WriteLine("Enter 1 add a movie to the file");
     Console.WriteLine("Enter 2 to display all movies");
+    Console.WriteLine("Enter 3 to find a movie");
     Console.WriteLine("Enter anything else to quit.");
 
     string resp = Console.ReadLine();
@@ -91,9 +92,33 @@ else if (resp == "2")//read the movies.csv file
             Console.WriteLine("File doesn't exist");
         }
     }
+
+else if  (resp == "3") //search for a movie in movies.csv file
+{
+    Console.WriteLine("Enter the title of the movie you want to find:");
+    string findMovie = Console.ReadLine();
+
+    Console.ForegroundColor = ConsoleColor.Green;
+
+    var movieTitle = movieFile.Movies.Where(m => m.title.Contains(findMovie));
+    if (movieTitle.Any())
+    {
+        Console.WriteLine($"Movies found with the title '{findMovie}':");
+        foreach (var movie in movieTitle)
+        {
+            Console.WriteLine($"{movie.title}");
+            Console.ForegroundColor = ConsoleColor.White;
+        }
+}
+else
+{
+    Console.WriteLine("There are no movies with this title.");
+}
+}
 else
     {
-        optionISNOT1or2 = false;
+       optionISNOT1thru3 = false;
     }
 }
+
 logger.Info("Program ended");
