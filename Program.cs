@@ -10,6 +10,15 @@ string scrubbedFile = FileScrubber.ScrubMovies("movies.csv");
 logger.Info(scrubbedFile);
 MovieFile movieFile = new MovieFile(scrubbedFile);
 
+Console.ForegroundColor = ConsoleColor.Green;
+// LINQ - Where filter operator & Contains quantifier operator
+var Movies = movieFile.Movies.Where(m => m.title.Contains("(1990)"));
+// LINQ - Count aggregation method
+Console.WriteLine($"There are {Movies.Count()} movies from 1990");
+
+Console.ForegroundColor = ConsoleColor.White;
+
+
 bool optionISNOT1or2 = true;
 while (optionISNOT1or2)
 {

@@ -7061,3 +7061,15 @@
 2023-10-29 16:38:27.2079|ERROR|Program|Invalid data format
 2023-10-29 16:38:27.2239|ERROR|Program|Invalid data format
 2023-10-29 16:38:27.2239|ERROR|Program|Invalid data format
+2023-10-29 20:20:37.1315|INFO|Program|Program started
+2023-10-29 20:20:37.2238|INFO|FileScrubber|File already scrubbed
+2023-10-29 20:20:37.2238|INFO|Program|movies.scrubbed.csv
+2023-10-29 20:20:37.3055|ERROR|MovieFile|String 'C.Kelm' was not recognized as a valid TimeSpan.
+2023-10-29 20:21:06.7809|INFO|Program|Program started
+2023-10-29 20:21:06.9758|INFO|FileScrubber|File already scrubbed
+2023-10-29 20:21:06.9758|INFO|Program|movies.scrubbed.csv
+2023-10-29 20:21:07.1404|ERROR|MovieFile|String 'C.Kelm' was not recognized as a valid TimeSpan.
+2023-10-29 20:24:20.1308|INFO|Program|Program started
+2023-10-29 20:24:20.2268|INFO|FileScrubber|File already scrubbed
+2023-10-29 20:24:20.2268|INFO|Program|movies.scrubbed.csv
+2023-10-29 20:24:20.3164|ERROR|MovieFile|String 'C.Kelm' was not recognized as a valid TimeSpan.
