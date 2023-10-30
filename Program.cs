@@ -1,5 +1,4 @@
-﻿using NLog;
-
+﻿﻿using NLog;
 // See https://aka.ms/new-console-template for more information
 string path = Directory.GetCurrentDirectory() + "\\nlog.config";
 
@@ -11,7 +10,6 @@ string scrubbedFile = FileScrubber.ScrubMovies("movies.csv");
 logger.Info(scrubbedFile);
 MovieFile movieFile = new MovieFile(scrubbedFile);
 
-logger.Info("Program ended");
 bool optionISNOT1or2 = true;
 while (optionISNOT1or2)
 {
@@ -29,7 +27,7 @@ while (optionISNOT1or2)
         List<string> newMovieGenres = new List<string>();
         while(true)
         { 
-            Console.WriteLine("Enter Enter genre (or done to quit):");
+            Console.WriteLine("Enter genre (or done to quit):");
             string MovieGenre = Console.ReadLine();
             if (MovieGenre == "done")
                 break;
@@ -60,7 +58,14 @@ else if (resp == "2")//read the movies.csv file
     {
         string line = sr.ReadLine();
         string[] segments = line.Split(',');
-        Console.WriteLine($"{segments[0]}, {segments[1]}, {segments[2]}, {segments[3]}, {segments[4]}"); // display each movie attribute on one line
+        if (segments.Length >= 4)
+        {
+            Console.WriteLine($"{segments[0]}, {segments[1]}, {segments[2]}, {segments[3]}"); // display each movie attribute on one line
+        }
+        else
+        {
+            logger.Error("Invalid data format");
+        }
 
         if (int.TryParse(segments[0], out int id))
         {
@@ -82,3 +87,4 @@ else
         optionISNOT1or2 = false;
     }
 }
+logger.Info("Program ended");
